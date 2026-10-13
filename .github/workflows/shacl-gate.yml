@@ -1,0 +1,48 @@
+
+# SHACL gate - Food Knowledge Representation
+#
+# Runs automatically when changes are pushed or a pull
+# request is opened involving the Session 4 validation files.
+#
+# A SHACL Violation fails the gate.
+# Warnings are reported but do not fail the gate.
+
+name: SHACL gate
+
+on:
+  push:
+    paths:
+      - "session_04/**"
+      - ".github/workflows/shacl-gate.yml"
+
+  pull_request:
+    paths:
+      - "session_04/**"
+      - ".github/workflows/shacl-gate.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install SHACL dependencies
+        run: python -m pip install pyshacl==0.40.1 rdflib==7.6.0
+
+      - name: Validate USDA food sample
+        run: >
+          python session_04/validate.py
+          --data session_04/ci/sample-foods.ttl
+          --shapes session_04/food-shapes.ttl

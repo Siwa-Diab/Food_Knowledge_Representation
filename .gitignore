@@ -1,0 +1,23 @@
+
+# Python environments
+.venv/
+.venv312/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# VS Code and Jupyter
+.vscode/
+.ipynb_checkpoints/
+
+# Large generated data and RDF graphs
+data/raw/
+data/processed/
+session_02/output/
+
+# Generated reports and temporary files
+*.log

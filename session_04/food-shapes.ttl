@@ -1,0 +1,97 @@
+
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ============================================================
+# Food Knowledge Representation
+# Session 4 - Triaged SHACL Shapes
+#
+# Research question:
+# A food safety agency flags sesame for review.
+# Which products declare sesame, which categories are
+# affected, and which products cannot be assessed reliably?
+#
+# TRIAGE:
+# Severity reflects the impact on our research question.
+# ============================================================
+
+food:BrandedFoodShape
+    a sh:NodeShape ;
+
+    rdfs:label "Branded food validation" ;
+
+    sh:targetClass food:BrandedFood ;
+
+    # --------------------------------------------------------
+    # Rule 1: Ingredient declaration
+    #
+    # TRIAGE:
+    # Keep Violation.
+    #
+    # Without a declaration, sesame screening cannot
+    # reliably assess the product.
+    # --------------------------------------------------------
+
+    sh:property [
+        sh:path food:ingredientDeclaration ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Violation ;
+        sh:message
+            "Missing or incorrectly typed ingredient declaration." ;
+    ] ;
+
+    # --------------------------------------------------------
+    # Rule 2: Food category
+    #
+    # TRIAGE:
+    # Downgrade Violation -> Warning.
+    #
+    # Category is important for affected-category analysis,
+    # but the product can still be screened for sesame.
+    # --------------------------------------------------------
+
+    sh:property [
+        sh:path food:foodCategory ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message
+            "Food category is missing; category-level impact analysis may be incomplete." ;
+    ] ;
+
+    # --------------------------------------------------------
+    # Rule 3: Brand owner
+    #
+    # TRIAGE:
+    # Downgrade Violation -> Warning.
+    #
+    # Missing brand-owner metadata does not necessarily
+    # prevent ingredient screening.
+    # --------------------------------------------------------
+
+    sh:property [
+        sh:path food:brandOwner ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message
+            "Brand owner is missing; product metadata is incomplete." ;
+    ] ;
+
+    # --------------------------------------------------------
+    # Rule 4: GTIN / UPC
+    #
+    # TRIAGE:
+    # Keep Violation.
+    #
+    # Product identifiers support record traceability.
+    # --------------------------------------------------------
+
+    sh:property [
+        sh:path food:gtinUpc ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message
+            "Branded food must have a GTIN/UPC identifier." ;
+    ] .
