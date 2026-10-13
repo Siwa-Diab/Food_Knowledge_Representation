@@ -1,0 +1,2361 @@
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/769296> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755517> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1662604> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2536415> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527947> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348163> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2553312> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2538791> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350796> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/769908> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348667> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529386> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577799> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/450797> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755665> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530918> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/578248> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/461865> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1209618> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1662991> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757591> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2586589> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527159> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/352872> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532108> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1253873> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755883> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346490> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353117> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/349631> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348098> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2538118> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757366> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2536804> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757203> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351381> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/614144> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/486193> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355133> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2582360> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/578221> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2627895> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355043> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530559> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531215> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/769484> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346188> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2533373> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757357> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1205901> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1491151> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355133> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2539484> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2533096> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2603335> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755552> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1589036> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2534600> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527407> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756840> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531766> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/576982> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/578676> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577482> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351026> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527851> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2562574> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1369904> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532818> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/576837> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1662726> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1314249> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1549507> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353263> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531519> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532082> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2540514> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350684> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532596> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/579132> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2628950> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577063> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346276> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2534168> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355659> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346335> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528155> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577972> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530964> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527086> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/356177> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348109> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537398> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/370890> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2526951> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355076> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529659> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353275> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755526> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2607982> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350144> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527689> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351082> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531003> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529555> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2534699> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351334> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2535604> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530905> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529051> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/349061> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529534> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528054> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1662592> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528449> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/506361> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527130> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/579785> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/356216> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531344> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2552644> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355027> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/349447> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1369561> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527541> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2547336> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348726> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/349931> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353694> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2624487> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346019> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2595561> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351216> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/404391> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346902> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757023> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350487> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/352627> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537115> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757499> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/354528> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/347738> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528970> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2547250> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527178> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/578204> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355720> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756829> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2614844> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532034> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351410> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/522055> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1664726> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2547367> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/352832> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1548191> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537627> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2534638> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2660167> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/614116> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2680703> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346998> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353426> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537976> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1589711> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2553424> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1370843> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353501> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355027> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537728> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/771288> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/347650> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348865> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/614220> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346394> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2525240> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1585582> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527108> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351304> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350774> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351392> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/354661> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530912> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529966> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1286275> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/352240> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528870> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/347627> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350036> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2533091> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/352649> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537497> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2534484> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2549280> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537965> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/605072> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529503> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530883> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1548111> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/347196> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2553670> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1662272> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1310414> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2536547> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532902> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2547070> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1369672> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350663> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/579322> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527537> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2529785> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351215> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355023> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2526866> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2539577> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531067> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/354528> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2534914> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353405> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/475605> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/613494> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756304> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532120> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757119> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/380380> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355023> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530186> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1664890> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2588923> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353161> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2551578> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1173308> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/356321> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355096> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2547282> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351763> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/354661> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1370260> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1580033> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351434> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2553904> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528345> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530221> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/354303> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756449> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2564401> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577213> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2550531> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353067> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528440> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756116> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346548> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755628> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527299> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/576822> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2552655> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/347726> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531710> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/356230> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530294> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/353396> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/498390> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2616043> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2607938> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527309> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2547217> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2531333> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2536417> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537386> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/452214> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355043> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2551376> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2532323> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2757196> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1662041> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355664> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755671> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/608850> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/614184> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756891> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348414> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355897> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1311612> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2535262> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577959> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/354295> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1369905> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/356143> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2526263> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527447> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2552975> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1559801> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528836> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351136> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/614380> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/391683> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527486> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756005> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1607576> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350971> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/359095> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346869> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537696> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/348374> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1663083> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/354371> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/346999> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/347734> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2755902> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2528101> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530526> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/578085> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530372> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2756276> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/691296> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/351114> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2590332> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2570427> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2657322> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2526782> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/347391> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/1662569> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2537793> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2550350> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/355076> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577562> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/491423> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/350810> ;
+            sh:resultMessage "Food category is missing; category-level impact analysis may be incomplete." ;
+            sh:resultPath food:foodCategory ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/373768> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2536306> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2534357> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2530813> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/2527804> ;
+            sh:resultMessage "Brand owner is missing; product metadata is incomplete." ;
+            sh:resultPath food:brandOwner ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b3 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://example.org/food-kr/id/food/usda/577853> ;
+            sh:resultMessage "Missing or incorrectly typed ingredient declaration." ;
+            sh:resultPath food:ingredientDeclaration ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:nb89e2e9a8bc847b187546a60cf761cb0b1 ] .
+
+_:nb89e2e9a8bc847b187546a60cf761cb0b1 sh:datatype xsd:string ;
+    sh:message "Missing or incorrectly typed ingredient declaration." ;
+    sh:minCount 1 ;
+    sh:path food:ingredientDeclaration ;
+    sh:severity sh:Violation .
+
+_:nb89e2e9a8bc847b187546a60cf761cb0b2 sh:message "Food category is missing; category-level impact analysis may be incomplete." ;
+    sh:minCount 1 ;
+    sh:path food:foodCategory ;
+    sh:severity sh:Warning .
+
+_:nb89e2e9a8bc847b187546a60cf761cb0b3 sh:message "Brand owner is missing; product metadata is incomplete." ;
+    sh:minCount 1 ;
+    sh:path food:brandOwner ;
+    sh:severity sh:Warning .
+

@@ -1,0 +1,64 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/food-kr/id/graph/usda/branded_food> a prov:Entity ;
+    void:triples 114232 ;
+    prov:generatedAtTime "2026-10-12T18:32:03+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://example.org/food-kr/id/file/usda/branded_food.csv> ;
+    prov:wasGeneratedBy <https://example.org/food-kr/id/run/usda/convert-20261012T183203Z> .
+
+<https://example.org/food-kr/id/graph/usda/food> a prov:Entity ;
+    void:triples 40000 ;
+    prov:generatedAtTime "2026-10-12T18:32:03+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://example.org/food-kr/id/file/usda/food.csv> ;
+    prov:wasGeneratedBy <https://example.org/food-kr/id/run/usda/convert-20261012T183203Z> .
+
+<https://example.org/food-kr/id/graph/usda/food_nutrient> a prov:Entity ;
+    void:triples 1045020 ;
+    prov:generatedAtTime "2026-10-12T18:32:03+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://example.org/food-kr/id/file/usda/food_nutrient.csv> ;
+    prov:wasGeneratedBy <https://example.org/food-kr/id/run/usda/convert-20261012T183203Z> .
+
+<https://example.org/food-kr/id/graph/usda/nutrient> a prov:Entity ;
+    void:triples 1431 ;
+    prov:generatedAtTime "2026-10-12T18:32:03+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://example.org/food-kr/id/file/usda/nutrient.csv> ;
+    prov:wasGeneratedBy <https://example.org/food-kr/id/run/usda/convert-20261012T183203Z> .
+
+<https://example.org/food-kr/id/graph/usda/schema> a prov:Entity ;
+    void:triples 38 ;
+    prov:generatedAtTime "2026-10-12T18:32:03+00:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://example.org/food-kr/id/run/usda/convert-20261012T183203Z> .
+
+<https://example.org/food-kr/id/software/session-02/convert_to_rdf.py> a prov:SoftwareAgent ;
+    rdfs:label "convert_to_rdf.py (Session 2)" ;
+    dcterms:identifier "sha256:0f4f14d0a7923d27ef226b17ccd2e5b6f0ccdf652e8cd0941f1fdbf7979766bc" .
+
+<https://example.org/food-kr/id/file/usda/branded_food.csv> a prov:Entity ;
+    dcterms:identifier "sha256:9d88391054dff0061d67a7b7bc0ece0dfa1e27e4d07e12307570709541ccc1d1" ;
+    dcterms:title "branded_food.csv" .
+
+<https://example.org/food-kr/id/file/usda/food.csv> a prov:Entity ;
+    dcterms:identifier "sha256:de09143f4605459e74452482efd02cc16844e2bd468c9263d8ef7a0098bef5cc" ;
+    dcterms:title "food.csv" .
+
+<https://example.org/food-kr/id/file/usda/food_nutrient.csv> a prov:Entity ;
+    dcterms:identifier "sha256:b5dc5f811dbcc92dd7d96b47979b4bd7b95ece8f1ed97c61af4c033c9710fc63" ;
+    dcterms:title "food_nutrient.csv" .
+
+<https://example.org/food-kr/id/file/usda/nutrient.csv> a prov:Entity ;
+    dcterms:identifier "sha256:75cd158ad5cde2ec8ead4ca81a1c498fe9f4cbacb8c1162a55d12e0c5ae8dfff" ;
+    dcterms:title "nutrient.csv" .
+
+<https://example.org/food-kr/id/run/usda/convert-20261012T183203Z> a prov:Activity ;
+    rdfs:label "Session 2 conversion of USDA processed CSV files to RDF" ;
+    prov:endedAtTime "2026-10-12T18:32:03+00:00"^^xsd:dateTime ;
+    prov:used <https://example.org/food-kr/id/file/usda/branded_food.csv>,
+        <https://example.org/food-kr/id/file/usda/food.csv>,
+        <https://example.org/food-kr/id/file/usda/food_nutrient.csv>,
+        <https://example.org/food-kr/id/file/usda/nutrient.csv> ;
+    prov:wasAssociatedWith <https://example.org/food-kr/id/software/session-02/convert_to_rdf.py> .
+

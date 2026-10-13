@@ -1,0 +1,14 @@
+Session 3 - Food Ontology Realization
+EquivalentTo vs SubClassOf
+
+Experiment 1: EquivalentTo
+  product_sesame_1: SesameDeclarationCandidate, BrandedFood
+  product_sesame_2: SesameDeclarationCandidate, BrandedFood
+  product_other_1: BrandedFood
+
+Experiment 2: SubClassOf
+  product_sesame_1: BrandedFood
+  product_sesame_2: BrandedFood
+  product_other_1: BrandedFood
+
+Conclusion: EquivalentTo supports classification from the definition; SubClassOf alone does not.

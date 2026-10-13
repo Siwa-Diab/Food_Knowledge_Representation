@@ -1,0 +1,6 @@
+,dtype,n_unique,pct_missing
+nutrient_nbr,float64,465,2.5
+rank,float64,358,2.3
+id,int64,477,0.0
+unit_name,object,12,0.0
+name,object,474,0.0

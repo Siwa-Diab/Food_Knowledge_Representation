@@ -1,0 +1,146 @@
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+
+
+# ============================================================
+# 1. ONTOLOGY METADATA
+# ============================================================
+
+<https://example.org/food-kr/ontology>
+    a owl:Ontology ;
+
+    dcterms:title
+        "Food Knowledge Representation Ontology"@en ;
+
+    dcterms:description
+        "An OWL ontology for representing branded food products, ingredient concepts, and sesame declaration candidates. It supports semantic reasoning about ingredient declarations while distinguishing declared ingredients from verified product composition."@en ;
+
+    rdfs:label
+        "Food Knowledge Representation Ontology"@en .
+
+
+# ============================================================
+# 2. CORE CLASSES
+# ============================================================
+
+food:Food
+    a owl:Class ;
+
+    rdfs:label
+        "Food"@en ;
+
+    skos:definition
+        "A food entity represented in the knowledge representation system."@en ;
+
+    IAO:0000115
+        "A food entity represented in the knowledge representation system."@en .
+
+
+food:BrandedFood
+    a owl:Class ;
+
+    rdfs:subClassOf food:Food ;
+
+    rdfs:label
+        "Branded food"@en ;
+
+    skos:definition
+        "A food product represented as a branded food item in the knowledge representation system."@en ;
+
+    IAO:0000115
+        "A food product represented as a branded food item in the knowledge representation system."@en .
+
+
+food:Ingredient
+    a owl:Class ;
+
+    rdfs:label
+        "Ingredient"@en ;
+
+    skos:definition
+        "An ingredient concept that may be referenced in the declaration of a branded food product."@en ;
+
+    IAO:0000115
+        "An ingredient concept that may be referenced in the declaration of a branded food product."@en .
+
+
+# ============================================================
+# 3. SESAME INGREDIENT CLASS
+# ============================================================
+
+food:SesameIngredient
+    a owl:Class ;
+
+    rdfs:subClassOf food:Ingredient ;
+
+    rdfs:label
+        "Sesame ingredient"@en ;
+
+    skos:definition
+        "An ingredient concept classified as sesame for declaration-based food reasoning."@en ;
+
+    IAO:0000115
+        "An ingredient concept classified as sesame for declaration-based food reasoning."@en .
+
+
+# ============================================================
+# 4. OBJECT PROPERTY
+# ============================================================
+
+food:hasDeclaredIngredient
+    a owl:ObjectProperty ;
+
+    rdfs:domain food:BrandedFood ;
+
+    rdfs:range food:Ingredient ;
+
+    rdfs:label
+        "has declared ingredient"@en ;
+
+    skos:definition
+        "Relates a branded food product to an ingredient represented in its ingredient declaration."@en ;
+
+    IAO:0000115
+        "Relates a branded food product to an ingredient represented in its ingredient declaration."@en .
+
+
+# ============================================================
+# 5. DEFINED CLASS: SESAME DECLARATION CANDIDATE
+# ============================================================
+
+food:SesameDeclarationCandidate
+    a owl:Class ;
+
+    rdfs:subClassOf food:BrandedFood ;
+
+    rdfs:label
+        "Sesame declaration candidate"@en ;
+
+    skos:definition
+        "A branded food product for which the modeled ingredient declarations include at least one ingredient classified as sesame. This classification identifies a declaration-based candidate and does not independently verify the product's composition."@en ;
+
+    IAO:0000115
+        "A branded food product for which the modeled ingredient declarations include at least one ingredient classified as sesame. This classification identifies a declaration-based candidate and does not independently verify the product's composition."@en ;
+
+    owl:equivalentClass [
+        a owl:Class ;
+
+        owl:intersectionOf (
+            food:BrandedFood
+
+            [
+                a owl:Restriction ;
+
+                owl:onProperty food:hasDeclaredIngredient ;
+
+                owl:someValuesFrom food:SesameIngredient
+            ]
+        )
+    ] .

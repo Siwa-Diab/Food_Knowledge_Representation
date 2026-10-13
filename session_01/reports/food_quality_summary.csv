@@ -1,0 +1,9 @@
+,dtype,n_unique,pct_missing
+food_category_id,float64,0,100.0
+trade_channel,object,37,98.3
+data_type,object,1,0.0
+fdc_id,int64,20000,0.0
+description,object,17886,0.0
+publication_date,object,72,0.0
+market_country,object,3,0.0
+microbe_data,object,1,0.0

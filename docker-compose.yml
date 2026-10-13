@@ -1,0 +1,43 @@
+
+services:
+
+  # =========================================================
+  # 1. APACHE JENA FUSEKI - RDF KNOWLEDGE GRAPH
+  # =========================================================
+  fuseki:
+    image: kr-fuseki:5.5.0
+    ports:
+      - "127.0.0.1:3031:3030"
+    volumes:
+      - food-fuseki-data:/data
+    command:
+      - sh
+      - -c
+      - >
+        mkdir -p /data/foodkr &&
+        exec java -jar /opt/fuseki/fuseki-server.jar
+        --port=3030
+        --tdb2
+        --loc=/data/foodkr
+        --update
+        /foodkr
+
+  # =========================================================
+  # 2. NEO4J - PROPERTY GRAPH DATABASE
+  # =========================================================
+  neo4j:
+    image: neo4j:5-community
+    environment:
+      NEO4J_AUTH: neo4j/food-kr-pw
+    ports:
+      - "127.0.0.1:7475:7474"
+      - "127.0.0.1:7688:7687"
+    volumes:
+      - food-neo4j-data:/data
+
+# =========================================================
+# 3. PERSISTENT STORAGE
+# =========================================================
+volumes:
+  food-fuseki-data:
+  food-neo4j-data:

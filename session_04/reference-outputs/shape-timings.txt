@@ -1,0 +1,7 @@
+﻿Food Knowledge Representation
+Session 4 - SHACL Shape Timings
+-------------------------------------------------------
+data: food_knowledge_graph.ttl (1,200,721 triples)
+shapes: food-shapes.ttl
+
+BrandedFoodShape         core     25.10 s   334 results

@@ -1,0 +1,33 @@
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix item: <https://example.org/food-kr/id/> .
+
+<https://example.org/food-kr/sample-foods>
+    a owl:Ontology ;
+    owl:imports <https://example.org/food-kr/ontology> .
+
+item:ingredient/sesame
+    a owl:NamedIndividual , food:SesameIngredient ;
+    rdfs:label "Sesame" .
+
+item:ingredient/sugar
+    a owl:NamedIndividual , food:Ingredient ;
+    rdfs:label "Sugar" .
+
+# Product 1: declares sesame
+item:product_sesame_1
+    a owl:NamedIndividual , food:BrandedFood ;
+    food:hasDeclaredIngredient item:ingredient/sesame .
+
+# Product 2: declares sugar
+item:product_other_1
+    a owl:NamedIndividual , food:BrandedFood ;
+    food:hasDeclaredIngredient item:ingredient/sugar .
+
+# Product 3: no explicit BrandedFood type
+item:product_sesame_2
+    a owl:NamedIndividual ;
+    food:hasDeclaredIngredient item:ingredient/sesame .

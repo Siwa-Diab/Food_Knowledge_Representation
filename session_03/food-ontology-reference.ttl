@@ -1,0 +1,40 @@
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix food: <https://example.org/food-kr/schema#> .
+
+# Ontology declaration
+<https://example.org/food-kr/ontology>
+    a owl:Ontology ;
+    rdfs:label "Food Knowledge Representation Ontology" .
+
+# Classes
+food:Food a owl:Class .
+
+food:BrandedFood a owl:Class ;
+    rdfs:subClassOf food:Food .
+
+food:Ingredient a owl:Class .
+
+food:SesameIngredient a owl:Class ;
+    rdfs:subClassOf food:Ingredient .
+
+# Relationship between branded food and declared ingredients
+food:hasDeclaredIngredient a owl:ObjectProperty ;
+    rdfs:domain food:BrandedFood ;
+    rdfs:range food:Ingredient .
+
+# Defined class: automatically inferred by the reasoner
+food:SesameDeclarationCandidate a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            food:BrandedFood
+            [
+                a owl:Restriction ;
+                owl:onProperty food:hasDeclaredIngredient ;
+                owl:someValuesFrom food:SesameIngredient
+            ]
+        )
+    ] .

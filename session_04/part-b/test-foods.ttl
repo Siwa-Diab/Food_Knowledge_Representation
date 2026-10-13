@@ -1,0 +1,129 @@
+# Part B: USDA-derived sample with four planted faults.
+# 
+# Y1: Product 1001463 has no GTIN/UPC.
+# Y1: Product 1001635 has two GTIN/UPC values.
+# Y2: Measurement https://example.org/food-kr/id/measurement/usda/10005938 has amount -5.
+# Y3: Product 1000717 has a whitespace-only ingredient declaration.
+# All faults are intentional teaching examples.
+# 
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/food-kr/id/food/usda/1000131> a food:BrandedFood,
+        food:Food ;
+    food:brandOwner "General Mills, Inc." ;
+    food:description "NATURE VALLEY, GRANOLA BARS, CHILI DARK CHOCOLATE, CHILI DARK CHOCOLATE" ;
+    food:foodCategory "Snack, Energy & Granola Bars" ;
+    food:gtinUpc "016000439566" ;
+    food:ingredientDeclaration "ROASTED PEANUTS, CORN SYRUP, SUGAR, WHOLE GRAIN OATS, SEMISWEET CHOCOLATE CHUNKS (SUGAR, CHOCOLATE LIQUOR, COCOA BUTTER, SOY LECITHIN, NATURAL FLAVOR), RICE FLOUR, PALM KERNEL OIL, ALMONDS, FRUCTOSE, TAPIOCA SYRUP, COCOA, PUMPKIN SEEDS, VEGETABLE GLYCERIN, CANOLA OIL, WHOLE GRAIN WHEAT, SALT, SOY LECITHIN, CORN STARCH, BARLEY MALT EXTRACT, MILK, CINNAMON, CAYENNE PEPPER POWDER, NATURAL FLAVOR, BAKING SODA, MIXED TOCOPHEROLS ADDED TO RETAIN FRESHNESS." .
+
+<https://example.org/food-kr/id/food/usda/1000717> a food:BrandedFood,
+        food:Food ;
+    food:brandOwner "Wildeats Enterprises" ;
+    food:description "LAMB SEASONING" ;
+    food:foodCategory "Seasoning Mixes, Salts, Marinades & Tenderizers" ;
+    food:gtinUpc "654063000059" ;
+    food:hasNutrientMeasurement <https://example.org/food-kr/id/measurement/usda/11682311>,
+        <https://example.org/food-kr/id/measurement/usda/11682313>,
+        <https://example.org/food-kr/id/measurement/usda/11682315>,
+        <https://example.org/food-kr/id/measurement/usda/11682317>,
+        <https://example.org/food-kr/id/measurement/usda/11682319>,
+        <https://example.org/food-kr/id/measurement/usda/11682321>,
+        <https://example.org/food-kr/id/measurement/usda/11682323>,
+        <https://example.org/food-kr/id/measurement/usda/11682325>,
+        <https://example.org/food-kr/id/measurement/usda/11682327> ;
+    food:ingredientDeclaration "   "^^xsd:string .
+
+<https://example.org/food-kr/id/food/usda/1000843> a food:BrandedFood,
+        food:Food ;
+    food:brandOwner "Associated Wholesale Grocers, Inc." ;
+    food:description "COOKIES, CHOCOLATE CHIP" ;
+    food:foodCategory "Cookies & Biscuits" ;
+    food:gtinUpc "070038310327" ;
+    food:hasNutrientMeasurement <https://example.org/food-kr/id/measurement/usda/11683999>,
+        <https://example.org/food-kr/id/measurement/usda/11684001>,
+        <https://example.org/food-kr/id/measurement/usda/11684003>,
+        <https://example.org/food-kr/id/measurement/usda/11684005>,
+        <https://example.org/food-kr/id/measurement/usda/11684007>,
+        <https://example.org/food-kr/id/measurement/usda/11684009>,
+        <https://example.org/food-kr/id/measurement/usda/11684011>,
+        <https://example.org/food-kr/id/measurement/usda/11684013>,
+        <https://example.org/food-kr/id/measurement/usda/11684015>,
+        <https://example.org/food-kr/id/measurement/usda/11684017>,
+        <https://example.org/food-kr/id/measurement/usda/11684019>,
+        <https://example.org/food-kr/id/measurement/usda/11684021>,
+        <https://example.org/food-kr/id/measurement/usda/11684023>,
+        <https://example.org/food-kr/id/measurement/usda/11684025>,
+        <https://example.org/food-kr/id/measurement/usda/11684027>,
+        <https://example.org/food-kr/id/measurement/usda/11684029> ;
+    food:ingredientDeclaration "ENRICHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), SEMISWEET CHOCOLATE CHIPS (SUGAR, CHOCOLATE, COCOA BUTTER, DEXTROSE, SOY LECITHIN, VANILLIN), SUGAR, VEGETABLE OIL (CONTAINS ONE OR MORE OF THE FOLLOWING: CANOLA OIL, CORN OIL, PALM OIL, SOYBEAN OIL), HIGH FRUCTOSE CORN SYRUP, LEAVENING (SODIUM BICARBONATE, MONOCALCIUM PHOSPHATE, AMMONIUM BICARBONATE), SALT, NATURAL AND ARTIFICIAL FLAVORS, SOY LECITHIN (EMULSIFIER), CARAMEL COLOR." .
+
+<https://example.org/food-kr/id/food/usda/1001135> a food:BrandedFood,
+        food:Food ;
+    food:brandOwner "Papa John's Salads & Produce" ;
+    food:description "YOGURT PARFAIT SNACK TRAY" ;
+    food:foodCategory "Yogurt" ;
+    food:gtinUpc "782796014446" ;
+    food:hasNutrientMeasurement <https://example.org/food-kr/id/measurement/usda/11687323>,
+        <https://example.org/food-kr/id/measurement/usda/11687325>,
+        <https://example.org/food-kr/id/measurement/usda/11687327>,
+        <https://example.org/food-kr/id/measurement/usda/11687329>,
+        <https://example.org/food-kr/id/measurement/usda/11687331>,
+        <https://example.org/food-kr/id/measurement/usda/11687333>,
+        <https://example.org/food-kr/id/measurement/usda/11687335>,
+        <https://example.org/food-kr/id/measurement/usda/11687337>,
+        <https://example.org/food-kr/id/measurement/usda/11687339>,
+        <https://example.org/food-kr/id/measurement/usda/11687341>,
+        <https://example.org/food-kr/id/measurement/usda/11687343>,
+        <https://example.org/food-kr/id/measurement/usda/11687345>,
+        <https://example.org/food-kr/id/measurement/usda/11687347>,
+        <https://example.org/food-kr/id/measurement/usda/11687349> ;
+    food:ingredientDeclaration "VANILLA YOGURT (CULTURED PASTEURIZED GRADE A NONFAT MILK, SUGAR, WATER, MODIFIED CORN STARCH, WHEY, NATURAL FLAVORS, TRICALCIUM PHOSPHATE, GELLA GUM, POTASSIUM SORBATE (FOR FRESHNESS), CITRIC ACID, VITAMIN D3), STRAWBERRIES, BLUEBERRIES, GRANOLA (WHOLE GRAIN OATS, SUGAR, CANOLA OIL, RICE FLOUR, HONEY, SALT, BROWN SUGAR SYRUP, BAKING SODA, SOY LECITHIN, NATURAL FLAVOR)." .
+
+<https://example.org/food-kr/id/food/usda/1001463> a food:BrandedFood,
+        food:Food ;
+    food:brandOwner "Beaverton Foods, Inc." ;
+    food:description "CHINESE MUSTARD, EXTRA HOT" ;
+    food:foodCategory "Ketchup, Mustard, BBQ & Cheese Sauce" ;
+    food:hasNutrientMeasurement <https://example.org/food-kr/id/measurement/usda/11691167>,
+        <https://example.org/food-kr/id/measurement/usda/11691169>,
+        <https://example.org/food-kr/id/measurement/usda/11691171>,
+        <https://example.org/food-kr/id/measurement/usda/11691173>,
+        <https://example.org/food-kr/id/measurement/usda/11691175>,
+        <https://example.org/food-kr/id/measurement/usda/11691177>,
+        <https://example.org/food-kr/id/measurement/usda/11691179>,
+        <https://example.org/food-kr/id/measurement/usda/11691181>,
+        <https://example.org/food-kr/id/measurement/usda/11691183>,
+        <https://example.org/food-kr/id/measurement/usda/11691185>,
+        <https://example.org/food-kr/id/measurement/usda/11691187>,
+        <https://example.org/food-kr/id/measurement/usda/11691189>,
+        <https://example.org/food-kr/id/measurement/usda/11691191>,
+        <https://example.org/food-kr/id/measurement/usda/11691193> ;
+    food:ingredientDeclaration "WATER, MUSTARD SEED, WHITE DISTILLED VINEGAR, SUGAR, SALT, FLAVORS (ARTIFICIAL, NATURAL), GARLIC, SPICES, XANTHAN GUM, CITRIC ACID, TURMERIC, LICORICE ROOT, CALCIUM DISODIUM EDTA (RETAINS PRODUCT FRESHNESS), GINGER." .
+
+<https://example.org/food-kr/id/food/usda/1001635> a food:BrandedFood,
+        food:Food ;
+    food:brandOwner "Hearthside USA, LLC" ;
+    food:description "CHEF SALAD" ;
+    food:foodCategory "Pickles, Olives, Peppers & Relishes" ;
+    food:gtinUpc "073508757769",
+        "TEST-DUPLICATE-GTIN"^^xsd:string ;
+    food:hasNutrientMeasurement <https://example.org/food-kr/id/measurement/usda/11693277>,
+        <https://example.org/food-kr/id/measurement/usda/11693279>,
+        <https://example.org/food-kr/id/measurement/usda/11693281>,
+        <https://example.org/food-kr/id/measurement/usda/11693283>,
+        <https://example.org/food-kr/id/measurement/usda/11693285>,
+        <https://example.org/food-kr/id/measurement/usda/11693287>,
+        <https://example.org/food-kr/id/measurement/usda/11693289>,
+        <https://example.org/food-kr/id/measurement/usda/11693291>,
+        <https://example.org/food-kr/id/measurement/usda/11693293>,
+        <https://example.org/food-kr/id/measurement/usda/11693295>,
+        <https://example.org/food-kr/id/measurement/usda/11693297>,
+        <https://example.org/food-kr/id/measurement/usda/11693299>,
+        <https://example.org/food-kr/id/measurement/usda/11693301> ;
+    food:ingredientDeclaration "LETTUCE BLEND (LETTUCE, CARROTS, RED CABBAGE), TOMATOES, CUCUMBERS, EGG (EGGS, WATER, CITRIC ACID, SODIUM BENZOATE [PRESERVATIVE]), ALL NATURAL TURKEY BREAST (TURKEY BREAST, WATER, SALT, SUGAR), SWISS CHEESE (CULTURED REDUCED FAT MILK, SALT, ENZYMES, VITAMIN A PALMITATE), HAM (HAM CURED WITH: WATER, SALT, DEXTROSE, SUGAR, SODIUM PHOSPHATE, SODIUM ERYTHORBATE, SODIUM NITRITE), ONIONS." .
+
+<https://example.org/food-kr/id/measurement/usda/10005938> a food:NutrientMeasurement ;
+    food:amount -5.0 ;
+    food:measuresNutrient <https://example.org/food-kr/id/nutrient/usda/1003> .
+

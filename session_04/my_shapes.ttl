@@ -1,0 +1,127 @@
+
+## Session 4 - Part B: Custom SHACL Shapes
+## Food Knowledge Representation Project
+##
+## Adapted from the professor's Brunel SHACL exercise.
+##
+## Y1 - Cardinality:
+##      Every branded food has exactly one GTIN/UPC.
+##
+## Y2 - Value range:
+##      A nutrient measurement amount cannot be negative.
+##
+## Y3 - SPARQL:
+##      A branded food cannot have an empty or whitespace-only
+##      ingredient declaration.
+##
+## These rules validate data quality, not verified sesame presence.
+
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix my:   <https://example.org/food-kr/shapes/my#> .
+
+# Prefix declarations used by the SPARQL constraint.
+
+<https://example.org/food-kr/shapes/my>
+    a owl:Ontology ;
+
+    sh:declare [
+        sh:prefix "food" ;
+        sh:namespace
+            "https://example.org/food-kr/schema#"^^xsd:anyURI
+    ] .
+
+
+# ============================================================
+# Y1 - CARDINALITY
+# ============================================================
+# Every branded food must have exactly one GTIN/UPC.
+#
+# minCount 1 -> at least one identifier.
+# maxCount 1 -> at most one identifier.
+# Together    -> exactly one identifier.
+
+my:Y1Shape
+    a sh:NodeShape ;
+
+    sh:targetClass food:BrandedFood ;
+
+    sh:property [
+        sh:path food:gtinUpc ;
+
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+
+        sh:message
+            "A branded food must have exactly one GTIN/UPC."
+    ] .
+
+
+# ============================================================
+# Y2 - VALUE RANGE
+# ============================================================
+# Every existing nutrient amount must be >= 0.
+#
+# minInclusive 0 -> zero is allowed, negatives are not.
+#
+# This does not require an amount to exist. That would need
+# a separate minCount constraint.
+
+my:Y2Shape
+    a sh:NodeShape ;
+
+    sh:targetClass food:NutrientMeasurement ;
+
+    sh:property [
+        sh:path food:amount ;
+
+        sh:minInclusive 0 ;
+
+        sh:message
+            "A nutrient measurement amount cannot be negative."
+    ] .
+
+
+# ============================================================
+# Y3 - SPARQL CONSTRAINT
+# ============================================================
+# Detect empty or whitespace-only ingredient declarations.
+#
+# The regex removes whitespace characters:
+# spaces, tabs, newlines, and carriage returns.
+#
+# An absent declaration is handled by food-shapes.ttl,
+# not by this SPARQL constraint.
+
+my:Y3Shape
+    a sh:NodeShape ;
+
+    sh:targetClass food:BrandedFood ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+
+        sh:message
+            "Ingredient declaration must not be empty or whitespace-only." ;
+
+        sh:prefixes
+            <https://example.org/food-kr/shapes/my> ;
+
+        sh:select """
+            SELECT $this
+            WHERE {
+                $this food:ingredientDeclaration ?ingredients .
+                FILTER (
+                    STRLEN(
+                        REPLACE(
+                            STR(?ingredients),
+                            "[ \\\\t\\\\r\\\\n]",
+                            ""
+                        )
+                    ) = 0
+                )
+            }
+        """
+    ] .

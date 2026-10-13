@@ -1,0 +1,49 @@
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix item: <https://example.org/food-kr/id/> .
+
+# Deliberately inconsistent ontology for Session 3.
+# Self-contained to avoid the import problems encountered earlier.
+
+<https://example.org/food-kr/domain-mistake>
+    a owl:Ontology ;
+    rdfs:label "Food KR Session 3: Domain Mistake" .
+
+# A branded food is a physical food product.
+food:BrandedFood
+    a owl:Class .
+
+# An ingredient declaration is label information.
+food:IngredientDeclaration
+    a owl:Class .
+
+# The two classes are disjoint in this teaching model.
+food:IngredientDeclaration
+    owl:disjointWith food:BrandedFood .
+
+food:Ingredient
+    a owl:Class .
+
+# The property is intended to connect a branded food
+# to an ingredient.
+food:hasDeclaredIngredient
+    a owl:ObjectProperty ;
+    rdfs:domain food:BrandedFood ;
+    rdfs:range food:Ingredient .
+
+# An ingredient individual.
+item:ingredient_sesame
+    a owl:NamedIndividual , food:Ingredient .
+
+# This individual represents label information,
+# NOT the food product itself.
+item:declaration_001
+    a owl:NamedIndividual , food:IngredientDeclaration ;
+
+    # DELIBERATE MISTAKE:
+    # This property expects a BrandedFood subject.
+    food:hasDeclaredIngredient item:ingredient_sesame .

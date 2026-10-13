@@ -1,0 +1,12 @@
+,dtype,n_unique,pct_missing
+median,float64,0,100.0
+min,float64,0,100.0
+data_points,float64,0,100.0
+footnote,float64,0,100.0
+min_year_acquired,float64,0,100.0
+max,float64,0,100.0
+derivation_id,float64,10,0.1
+nutrient_id,int64,81,0.0
+fdc_id,int64,18967,0.0
+id,int64,261255,0.0
+amount,float64,7441,0.0

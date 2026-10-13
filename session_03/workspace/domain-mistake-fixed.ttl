@@ -1,0 +1,43 @@
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix item: <https://example.org/food-kr/id/> .
+
+<https://example.org/food-kr/domain-mistake-fixed>
+    a owl:Ontology ;
+    rdfs:label "Food KR Session 3: Corrected Domain Example" .
+
+# Classes
+food:BrandedFood a owl:Class .
+food:IngredientDeclaration a owl:Class .
+food:Ingredient a owl:Class .
+
+# Physical products and declaration records are distinct concepts.
+food:IngredientDeclaration
+    owl:disjointWith food:BrandedFood .
+
+# Relationships
+food:hasDeclaredIngredient
+    a owl:ObjectProperty ;
+    rdfs:domain food:BrandedFood ;
+    rdfs:range food:Ingredient .
+
+food:hasIngredientDeclaration
+    a owl:ObjectProperty ;
+    rdfs:domain food:BrandedFood ;
+    rdfs:range food:IngredientDeclaration .
+
+# Individuals
+item:ingredient_sesame
+    a owl:NamedIndividual , food:Ingredient .
+
+item:product_001
+    a owl:NamedIndividual , food:BrandedFood ;
+    food:hasDeclaredIngredient item:ingredient_sesame ;
+    food:hasIngredientDeclaration item:declaration_001 .
+
+item:declaration_001
+    a owl:NamedIndividual , food:IngredientDeclaration .

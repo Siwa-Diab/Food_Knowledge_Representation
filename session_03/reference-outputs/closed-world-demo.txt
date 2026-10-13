@@ -1,0 +1,7 @@
+SQLite 3.42.0, foreign keys on
+Known product product_001, ingredient_sesame: relationship accepted
+INSERT INTO has_declared_ingredient VALUES ('product_002', 'ingredient_sesame')
+IntegrityError: FOREIGN KEY constraint failed
+OWL, same fact: nothing is rejected solely because product_002 lacks an explicit BrandedFood type.
+The domain of food:hasDeclaredIngredient allows a reasoner to infer that product_002 is a BrandedFood.
+Important: the relationship is an asserted declaration in this demonstration, not proof of actual composition.

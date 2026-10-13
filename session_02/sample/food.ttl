@@ -1,0 +1,24 @@
+@prefix food: <https://example.org/food-kr/schema#> .
+
+<https://example.org/food-kr/id/food/usda/1107471> a food:BrandedFood,
+        food:Food ;
+    food:brandOwner "Nissin Foods USA Co Inc" ;
+    food:description "CHICKEN FLAVOR CHOW MEIN NOODLES, CHICKEN" ;
+    food:foodCategory "All Noodles" ;
+    food:gtinUpc "070662087213" ;
+    food:hasNutrientMeasurement <https://example.org/food-kr/id/measurement/usda/13556030>,
+        <https://example.org/food-kr/id/measurement/usda/13556031>,
+        <https://example.org/food-kr/id/measurement/usda/13556032>,
+        <https://example.org/food-kr/id/measurement/usda/13556033>,
+        <https://example.org/food-kr/id/measurement/usda/13556034>,
+        <https://example.org/food-kr/id/measurement/usda/13556035>,
+        <https://example.org/food-kr/id/measurement/usda/13556036>,
+        <https://example.org/food-kr/id/measurement/usda/13556037>,
+        <https://example.org/food-kr/id/measurement/usda/13556038>,
+        <https://example.org/food-kr/id/measurement/usda/13556039>,
+        <https://example.org/food-kr/id/measurement/usda/13556040>,
+        <https://example.org/food-kr/id/measurement/usda/13556041>,
+        <https://example.org/food-kr/id/measurement/usda/13556042>,
+        <https://example.org/food-kr/id/measurement/usda/13556043> ;
+    food:ingredientDeclaration "ENRICHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), VEGETABLE OIL (PALM OIL, CANOLA OIL, SESAME OIL), WATER, DRIED CABBAGE FLAKE, SUGAR, SALT, CONTAINS LESS THAN 2% OF AUTOLYZED YEAST EXTRACT, BETA CAROTENE COLOR, BROWN SUGAR, CARAMEL COLOR, CHICKEN FAT, CITRIC ACID, CONCENTRATED GREEN CABBAGE JUICE, CONCENTRATED OYSTER JUICE (OYSTER, WATER, SALT), DEXTROSE, DISODIUM GUANYLATE, DISODIUM INOSINATE, DRIED CARROT STRIP, DRIED SHIITAKE MUSHROOM, EGG WHITE, HYDROLYZED CORN PROTEIN, LACTOSE, MALTODEXTRIN, MODIFIED FOOD STARCH, NATURAL FLAVOR, ONION POWDER, POWDERED CHICKEN, SODIUM PHOSPHATE, SODIUM TRIPOLYPHOSPHATE, SOY LECITHIN, SOYBEAN, TBHQ (PRESERVATIVE), TORULA YEAST EXTRACT, VINEGAR, WHEAT." .
+

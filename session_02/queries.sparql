@@ -1,0 +1,62 @@
+# USDA Food Knowledge Representation — Session 2 queries.
+# A sesame text match is a candidate, not verified ingredient presence.
+
+# --- Q1 · products whose declarations mention sesame ---
+PREFIX food: <https://example.org/food-kr/schema#>
+SELECT ?product ?description ?ingredients WHERE {
+  ?product a food:BrandedFood ; food:ingredientDeclaration ?ingredients .
+  OPTIONAL { ?product food:description ?description }
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+} ORDER BY ?product LIMIT 10
+
+# --- Q2 · sesame mentions by branded food category ---
+PREFIX food: <https://example.org/food-kr/schema#>
+SELECT ?category (COUNT(DISTINCT ?product) AS ?products) WHERE {
+  ?product a food:BrandedFood ;
+           food:ingredientDeclaration ?ingredients ;
+           food:foodCategory ?category .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+} GROUP BY ?category ORDER BY DESC(?products)
+
+# --- Q3 · sesame mentions by brand owner ---
+PREFIX food: <https://example.org/food-kr/schema#>
+SELECT ?brand (COUNT(DISTINCT ?product) AS ?products) WHERE {
+  ?product a food:BrandedFood ;
+           food:ingredientDeclaration ?ingredients ;
+           food:brandOwner ?brand .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+} GROUP BY ?brand ORDER BY DESC(?products)
+
+# --- Q4 · ASK: is any sesame candidate missing nutrient measurements? ---
+PREFIX food: <https://example.org/food-kr/schema#>
+ASK {
+  ?product a food:BrandedFood ; food:ingredientDeclaration ?ingredients .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+  FILTER NOT EXISTS { ?product food:hasNutrientMeasurement ?measurement }
+}
+
+# --- Q5 · counts of usable and missing ingredient declarations ---
+PREFIX food: <https://example.org/food-kr/schema#>
+SELECT (COUNT(?product) AS ?total)
+       (COUNT(?ingredients) AS ?withDeclaration)
+       ((COUNT(?product) - COUNT(?ingredients)) AS ?unknown) WHERE {
+  ?product a food:BrandedFood .
+  OPTIONAL { ?product food:ingredientDeclaration ?ingredients }
+}
+
+# --- Q6 · UNKNOWN: branded foods without ingredient declarations ---
+PREFIX food: <https://example.org/food-kr/schema#>
+SELECT ?product ?description WHERE {
+  ?product a food:BrandedFood .
+  FILTER NOT EXISTS { ?product food:ingredientDeclaration ?ingredients }
+  OPTIONAL { ?product food:description ?description }
+} ORDER BY ?product LIMIT 10
+
+# --- Q7 · CONSTRUCT: candidate products linked to affected categories ---
+PREFIX food: <https://example.org/food-kr/schema#>
+CONSTRUCT { ?product food:foodCategory ?category } WHERE {
+  ?product a food:BrandedFood ;
+           food:ingredientDeclaration ?ingredients ;
+           food:foodCategory ?category .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+}

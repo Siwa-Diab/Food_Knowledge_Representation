@@ -1,0 +1,4 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_license	https://example.org/food-kr/ontology	dc:license	
+INFO	missing_superclass	https://example.org/food-kr/schema#Food	rdfs:subClassOf	
+INFO	missing_superclass	https://example.org/food-kr/schema#Ingredient	rdfs:subClassOf	

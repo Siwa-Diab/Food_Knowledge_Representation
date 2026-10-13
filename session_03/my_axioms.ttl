@@ -1,0 +1,80 @@
+
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix food: <https://example.org/food-kr/schema#> .
+
+<https://example.org/food-kr/my-axioms>
+    a owl:Ontology ;
+    rdfs:label "Food KR Session 3: My OWL Axioms" .
+
+# --------------------------------------------------
+# Y1: DISJOINTNESS
+# --------------------------------------------------
+
+food:BrandedFood a owl:Class .
+food:IngredientDeclaration a owl:Class .
+
+food:BrandedFood
+    owl:disjointWith food:IngredientDeclaration .
+
+# --------------------------------------------------
+# Y2: EQUIVALENT CLASS
+# --------------------------------------------------
+
+food:ProductWithIncompleteDeclaration
+    a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            food:BrandedFood
+            [
+                a owl:Restriction ;
+                owl:onProperty food:hasDeclarationStatus ;
+                owl:hasValue food:IncompleteDeclarationStatus
+            ]
+        )
+    ] .
+
+food:hasDeclarationStatus
+    a owl:ObjectProperty ;
+    rdfs:domain food:BrandedFood ;
+    rdfs:range food:DeclarationStatus .
+
+food:DeclarationStatus a owl:Class .
+
+food:IncompleteDeclarationStatus
+    a owl:NamedIndividual , food:DeclarationStatus .
+
+# --------------------------------------------------
+# Y3: SOME + ONLY
+# --------------------------------------------------
+
+food:Ingredient a owl:Class .
+
+food:SesameIngredient
+    a owl:Class ;
+    rdfs:subClassOf food:Ingredient .
+
+food:hasDeclaredIngredient
+    a owl:ObjectProperty ;
+    rdfs:domain food:BrandedFood ;
+    rdfs:range food:Ingredient .
+
+food:SesameOnlyDeclarationCandidate
+    a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            food:BrandedFood
+            [
+                a owl:Restriction ;
+                owl:onProperty food:hasDeclaredIngredient ;
+                owl:someValuesFrom food:SesameIngredient
+            ]
+            [
+                a owl:Restriction ;
+                owl:onProperty food:hasDeclaredIngredient ;
+                owl:allValuesFrom food:SesameIngredient
+            ]
+        )
+    ] .

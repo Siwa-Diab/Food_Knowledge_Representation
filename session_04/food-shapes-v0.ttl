@@ -1,0 +1,54 @@
+
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================
+# Session 4 — First Draft Food SHACL Shapes
+#
+# These are intentionally strict initial rules.
+# We will investigate and triage their results later.
+# ============================================================
+
+food:BrandedFoodShapeV0
+    a sh:NodeShape ;
+
+    # Validate all explicitly typed branded foods.
+    sh:targetClass food:BrandedFood ;
+
+    # Rule 1: Ingredient declaration must exist.
+    sh:property [
+        sh:path food:ingredientDeclaration ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Violation ;
+        sh:message
+            "Branded food must have an ingredient declaration." ;
+    ] ;
+
+    # Rule 2: Food category must exist.
+    sh:property [
+        sh:path food:foodCategory ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message
+            "Branded food must have a food category." ;
+    ] ;
+
+    # Rule 3: Brand owner must exist.
+    sh:property [
+        sh:path food:brandOwner ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message
+            "Branded food must have a brand owner." ;
+    ] ;
+
+    # Rule 4: GTIN/UPC identifier must exist.
+    sh:property [
+        sh:path food:gtinUpc ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message
+            "Branded food must have a GTIN/UPC identifier." ;
+    ] .

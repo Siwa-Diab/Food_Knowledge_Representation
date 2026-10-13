@@ -1,0 +1,7 @@
+ID,Type,Rule_or_Question,Evidence,Source,Interpretation
+R1,Completeness,"Branded foods should have a usable ingredient declaration","68 of 20000 missing or blank","branded_food.csv","Missing declarations prevent automated ingredient screening"
+R2,Investigation,"Which branded foods mention sesame in their ingredient declarations?","523 of 19932 screenable records","branded_food.csv","Text matches require human review and are not confirmed contamination"
+R3,Investigation,"Which categories contain flagged products?","76 distinct category labels among 523 flagged records","branded_food.csv","Potentially relevant products span multiple food categories"
+R4,Investigation,"Which brand owners are associated with flagged products?","336 distinct owner labels among 523 flagged records","branded_food.csv","Owner labels may need normalization before identifying unique organizations"
+R5,Referential_Integrity,"Flagged branded foods should reference an existing food and have usable identifiers","0 broken food links; 0 missing barcodes; 10 flagged rows share barcodes","branded_food.csv + food.csv","Repeated barcodes require investigation and are not automatically errors"
+R6,Unknown_Handling,"Missing ingredient declarations must not be treated as negative ingredient matches","68 of 20000 records cannot be screened","branded_food.csv","These products have unknown sesame status under the screening method"

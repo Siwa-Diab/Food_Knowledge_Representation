@@ -1,4 +1,3 @@
-
 # Python environments
 .venv/
 .venv312/
@@ -10,14 +9,26 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# VS Code and Jupyter
+# Editor files
 .vscode/
 .ipynb_checkpoints/
 
-# Large generated data and RDF graphs
+# Large datasets and generated RDF graphs
 data/raw/
 data/processed/
+session_02/data/
 session_02/output/
 
-# Generated reports and temporary files
+# Temporary files
 *.log
+
+# Downloaded tools and external standards
+session_03/robot.jar
+session_04/workspace/epcis-shacl.ttl
+
+# Backups
+*.bak
+
+# Regenerable reports
+session_01/reports/*_profile.html
+session_03/reference-outputs/reasoned.ttl

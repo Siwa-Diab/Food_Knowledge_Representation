@@ -1,0 +1,26 @@
+
+# Session 4 - SHACL Targeting Trap
+#
+# Deliberately targets a class that does not exist
+# in the Session 2 Food Knowledge Graph.
+#
+# This demonstrates that SHACL can report conformance
+# when no resources are actually validated.
+#
+# DO NOT use this file as the project's validation rules.
+# The real rules are in food-shapes.ttl.
+
+@prefix food: <https://example.org/food-kr/schema#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+food:PurchaseOrderShape
+    a sh:NodeShape ;
+
+    sh:targetClass food:PurchaseOrder ;
+
+    sh:property [
+        sh:path food:hasCarrier ;
+        sh:minCount 1 ;
+        sh:message
+            "A purchase order must have a carrier."
+    ] .
