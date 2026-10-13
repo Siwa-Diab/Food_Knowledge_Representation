@@ -7,6 +7,9 @@
 # A SHACL Violation fails the gate.
 # Warnings are reported but do not fail the gate.
 
+
+# SHACL gate - Food Knowledge Representation
+
 name: SHACL gate
 
 on:
