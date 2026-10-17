@@ -1,0 +1,7 @@
+seed,epochs,model,mrr,hits_at_1,hits_at_10
+0,150,TransE,0.091,0.037,0.178
+0,150,Popularity,0.133,0.043,0.317
+1,150,TransE,0.076,0.026,0.161
+1,150,Popularity,0.136,0.046,0.312
+2,150,TransE,0.082,0.030,0.168
+2,150,Popularity,0.135,0.045,0.305

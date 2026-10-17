@@ -7,6 +7,7 @@
 .venv/
 .venv312/
 .venv-s05/
+.venv-s06/
 venv/
 env/
 
@@ -14,6 +15,9 @@ env/
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# PyKEEN cache
+session_06/data/pystow/
 
 # Editor files
 .vscode/

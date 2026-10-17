@@ -1,0 +1,3 @@
+Seed 1: 1,984 hidden links scored (6 cold-start excluded)
+  TransE      MRR 0.076  Hits@1 0.026  Hits@10 0.161
+  Popularity  MRR 0.136  Hits@1 0.046  Hits@10 0.312
