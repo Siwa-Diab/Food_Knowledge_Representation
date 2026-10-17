@@ -1,0 +1,18 @@
+
+PREFIX food: <https://example.org/food-kr/schema#>
+
+SELECT ?category (COUNT(DISTINCT ?product) AS ?products)
+WHERE {
+    ?product a food:BrandedFood ;
+             food:ingredientDeclaration ?ingredients ;
+             food:foodCategory ?category .
+
+    FILTER(
+        CONTAINS(
+            LCASE(STR(?ingredients)),
+            "sesame"
+        )
+    )
+}
+GROUP BY ?category
+ORDER BY DESC(?products)

@@ -1,0 +1,19 @@
+
+PREFIX food: <https://example.org/food-kr/schema#>
+
+SELECT (COUNT(DISTINCT ?product) AS ?missingCategory)
+WHERE {
+    ?product a food:BrandedFood ;
+             food:ingredientDeclaration ?ingredients .
+
+    FILTER(
+        CONTAINS(
+            LCASE(STR(?ingredients)),
+            "sesame"
+        )
+    )
+
+    FILTER NOT EXISTS {
+        ?product food:foodCategory ?category .
+    }
+}

@@ -1,10 +1,16 @@
-# Python environments
+
+# ============================================================
+# FOOD KNOWLEDGE REPRESENTATION - .gitignore
+# ============================================================
+
+# Python virtual environments
 .venv/
 .venv312/
+.venv-s05/
 venv/
 env/
 
-# Python cache
+# Python cache and test files
 __pycache__/
 *.pyc
 .pytest_cache/
@@ -32,3 +38,35 @@ session_04/workspace/epcis-shacl.ttl
 # Regenerable reports
 session_01/reports/*_profile.html
 session_03/reference-outputs/reasoned.ttl
+
+# ============================================================
+# SESSION 05 - RELATIONAL INTEGRATION
+# ============================================================
+
+# Generated RDF graphs, validation reports and outputs
+session_05/output/
+
+# Local SQLite database files
+session_05/*.db
+session_05/*.db-journal
+session_05/*.db-shm
+session_05/*.db-wal
+
+# Ontop downloaded dependencies
+session_05/ontop/ontop-cli/
+session_05/ontop/ontop-cli.zip
+
+# Ontop configuration containing database credentials
+session_05/ontop/food.properties
+
+# Ontop generated logs
+session_05/ontop/last-run.log
+
+# PostgreSQL environment or credential files
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# END
+# ============================================================

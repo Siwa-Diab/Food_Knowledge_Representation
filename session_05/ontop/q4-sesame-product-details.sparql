@@ -1,0 +1,29 @@
+
+PREFIX food: <https://example.org/food-kr/schema#>
+
+SELECT ?product ?description ?brandOwner ?category
+WHERE {
+    ?product a food:BrandedFood ;
+             food:ingredientDeclaration ?ingredients .
+
+    FILTER(
+        CONTAINS(
+            LCASE(STR(?ingredients)),
+            "sesame"
+        )
+    )
+
+    OPTIONAL {
+        ?product food:description ?description .
+    }
+
+    OPTIONAL {
+        ?product food:brandOwner ?brandOwner .
+    }
+
+    OPTIONAL {
+        ?product food:foodCategory ?category .
+    }
+}
+ORDER BY ?product
+LIMIT 20

@@ -1,0 +1,316 @@
+
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix food: <https://example.org/food-kr/schema#> .
+
+#################################################################
+# 1. FOOD PRODUCTS
+#################################################################
+
+<#Foods>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                NULLIF(TRIM(fdc_id), '') AS fdc_id,
+                NULLIF(TRIM(description), '') AS description
+            FROM food
+            WHERE NULLIF(TRIM(fdc_id), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}" ;
+        rr:class food:Food
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:description ;
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+
+#################################################################
+# 2. BRANDED FOOD PRODUCTS - CLASS MEMBERSHIP
+#################################################################
+
+<#BrandedFoods>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT TRIM(fdc_id) AS fdc_id
+            FROM branded_food
+            WHERE NULLIF(TRIM(fdc_id), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}" ;
+        rr:class food:BrandedFood
+    ] .
+
+
+#################################################################
+# 3. INGREDIENT DECLARATIONS
+# Exclude products with missing ingredient declarations.
+#################################################################
+
+<#IngredientDeclarations>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                TRIM(fdc_id) AS fdc_id,
+                TRIM(ingredients) AS ingredients
+            FROM branded_food
+            WHERE NULLIF(TRIM(fdc_id), '') IS NOT NULL
+              AND NULLIF(TRIM(ingredients), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}"
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:ingredientDeclaration ;
+        rr:objectMap [
+            rr:column "ingredients" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+
+#################################################################
+# 4. BRAND OWNERS
+#################################################################
+
+<#BrandOwners>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                TRIM(fdc_id) AS fdc_id,
+                TRIM(brand_owner) AS brand_owner
+            FROM branded_food
+            WHERE NULLIF(TRIM(fdc_id), '') IS NOT NULL
+              AND NULLIF(TRIM(brand_owner), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}"
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:brandOwner ;
+        rr:objectMap [
+            rr:column "brand_owner" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+
+#################################################################
+# 5. BRAND NAMES
+#################################################################
+
+<#BrandNames>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                TRIM(fdc_id) AS fdc_id,
+                TRIM(brand_name) AS brand_name
+            FROM branded_food
+            WHERE NULLIF(TRIM(fdc_id), '') IS NOT NULL
+              AND NULLIF(TRIM(brand_name), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}"
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:brandName ;
+        rr:objectMap [
+            rr:column "brand_name" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+
+#################################################################
+# 6. FOOD CATEGORIES
+#################################################################
+
+<#FoodCategories>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                TRIM(fdc_id) AS fdc_id,
+                TRIM(branded_food_category) AS branded_food_category
+            FROM branded_food
+            WHERE NULLIF(TRIM(fdc_id), '') IS NOT NULL
+              AND NULLIF(TRIM(branded_food_category), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}"
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:foodCategory ;
+        rr:objectMap [
+            rr:column "branded_food_category" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+
+#################################################################
+# 7. GTIN / UPC IDENTIFIERS
+#################################################################
+
+<#GtinUpcs>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                TRIM(fdc_id) AS fdc_id,
+                TRIM(gtin_upc) AS gtin_upc
+            FROM branded_food
+            WHERE NULLIF(TRIM(fdc_id), '') IS NOT NULL
+              AND NULLIF(TRIM(gtin_upc), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}"
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:gtinUpc ;
+        rr:objectMap [
+            rr:column "gtin_upc" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+
+#################################################################
+# 8. NUTRIENT DEFINITIONS
+#################################################################
+
+<#Nutrients>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                NULLIF(TRIM(id), '') AS id,
+                NULLIF(TRIM(name), '') AS name,
+                NULLIF(TRIM(unit_name), '') AS unit_name
+            FROM nutrient
+            WHERE NULLIF(TRIM(id), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/nutrient/usda/{id}" ;
+        rr:class food:Nutrient
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:nutrientName ;
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:unitName ;
+        rr:objectMap [
+            rr:column "unit_name" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+
+#################################################################
+# 9. NUTRIENT MEASUREMENTS
+#################################################################
+
+<#NutrientMeasurements>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                NULLIF(TRIM(id), '') AS id,
+                NULLIF(TRIM(fdc_id), '') AS fdc_id,
+                NULLIF(TRIM(nutrient_id), '') AS nutrient_id,
+                NULLIF(TRIM(amount), '') AS amount
+            FROM food_nutrient
+            WHERE NULLIF(TRIM(id), '') IS NOT NULL
+              AND NULLIF(TRIM(fdc_id), '') IS NOT NULL
+              AND NULLIF(TRIM(nutrient_id), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/measurement/usda/{id}" ;
+        rr:class food:NutrientMeasurement
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:measuresNutrient ;
+        rr:objectMap [
+            rr:template
+                "https://example.org/food-kr/id/nutrient/usda/{nutrient_id}"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:amount ;
+        rr:objectMap [
+            rr:column "amount" ;
+            rr:datatype xsd:decimal
+        ]
+    ] .
+
+
+#################################################################
+# 10. FOOD -> NUTRIENT MEASUREMENT RELATIONSHIPS
+#################################################################
+
+<#FoodMeasurementLinks>
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT
+                NULLIF(TRIM(id), '') AS id,
+                NULLIF(TRIM(fdc_id), '') AS fdc_id
+            FROM food_nutrient
+            WHERE NULLIF(TRIM(id), '') IS NOT NULL
+              AND NULLIF(TRIM(fdc_id), '') IS NOT NULL
+              AND NULLIF(TRIM(nutrient_id), '') IS NOT NULL
+        """
+    ] ;
+
+    rr:subjectMap [
+        rr:template
+            "https://example.org/food-kr/id/food/usda/{fdc_id}"
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate food:hasNutrientMeasurement ;
+        rr:objectMap [
+            rr:template
+                "https://example.org/food-kr/id/measurement/usda/{id}"
+        ]
+    ] .
