@@ -1,0 +1,29 @@
+
+# Session 07 — Part B — Y1
+# New natural-language/SPARQL example for the Food Knowledge Graph.
+
+@prefix ex: <https://example.org/food-kr/examples/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+ex:101
+    a sh:SPARQLExecutable ;
+    rdfs:comment "Which branded food products mention mustard in their ingredient declarations?" ;
+    sh:select """
+        PREFIX food: <https://example.org/food-kr/schema#>
+
+        SELECT DISTINCT ?product ?description
+        WHERE {
+            ?product a food:BrandedFood ;
+                     food:description ?description ;
+                     food:ingredientDeclaration ?ingredients .
+
+            FILTER(
+                CONTAINS(
+                    LCASE(STR(?ingredients)),
+                    "mustard"
+                )
+            )
+        }
+        LIMIT 25
+    """ .

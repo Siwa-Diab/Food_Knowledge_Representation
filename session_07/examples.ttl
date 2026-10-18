@@ -1,0 +1,67 @@
+# Food-specific training examples for natural language to SPARQL.
+# Keep evaluation questions separate from these examples.
+@prefix ex: <https://example.org/food-kr/examples/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+ex:1 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "Which branded products mention sesame in their ingredient declarations?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT DISTINCT ?product ?description WHERE {
+  ?product a food:BrandedFood ; food:ingredientDeclaration ?ingredients ; food:description ?description .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+} LIMIT 25""" .
+
+ex:2 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "How many branded foods have an ingredient declaration mentioning peanut?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT (COUNT(DISTINCT ?product) AS ?count) WHERE {
+  ?product a food:BrandedFood ; food:ingredientDeclaration ?ingredients .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "peanut"))
+}""" .
+
+ex:3 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "Which food categories contain products with ingredient declarations mentioning sesame, and how many products are in each?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT ?category (COUNT(DISTINCT ?product) AS ?products) WHERE {
+  ?product a food:BrandedFood ; food:foodCategory ?category ; food:ingredientDeclaration ?ingredients .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+} GROUP BY ?category ORDER BY DESC(?products)""" .
+
+ex:4 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "How many branded food products are in the graph?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT (COUNT(DISTINCT ?product) AS ?count) WHERE {
+  ?product a food:BrandedFood .
+}""" .
+
+ex:5 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "Which brand owners have products whose ingredient declarations mention sesame?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT DISTINCT ?owner WHERE {
+  ?product a food:BrandedFood ; food:brandOwner ?owner ; food:ingredientDeclaration ?ingredients .
+  FILTER(CONTAINS(LCASE(STR(?ingredients)), "sesame"))
+} ORDER BY ?owner LIMIT 50""" .
+
+ex:6 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "Which branded foods do not have an ingredient declaration statement?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT DISTINCT ?product WHERE {
+  ?product a food:BrandedFood .
+  FILTER NOT EXISTS { ?product food:ingredientDeclaration ?ingredients }
+} LIMIT 50""" .
+
+ex:7 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "What nutrients and amounts are recorded for a branded food?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT ?product ?nutrient ?amount WHERE {
+  ?product a food:BrandedFood ; food:hasNutrientMeasurement ?measurement .
+  ?measurement food:measuresNutrient ?nutrient ; food:amount ?amount .
+} LIMIT 30""" .
+
+ex:8 a sh:SPARQLExecutable, sh:SPARQLSelectExecutable ;
+  rdfs:comment "How many products have each food category?" ;
+  sh:select """PREFIX food: <https://example.org/food-kr/schema#>
+SELECT ?category (COUNT(DISTINCT ?product) AS ?products) WHERE {
+  ?product a food:BrandedFood ; food:foodCategory ?category .
+} GROUP BY ?category ORDER BY DESC(?products) LIMIT 30""" .

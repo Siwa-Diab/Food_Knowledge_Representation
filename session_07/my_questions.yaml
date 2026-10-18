@@ -1,0 +1,25 @@
+
+# Session 07 — Part B — Y3
+# Additional held-out evaluation question.
+
+dataset:
+  id: https://example.org/food-kr/
+  prefix: "PREFIX food: <https://example.org/food-kr/schema#>"
+
+questions:
+  - id: 101
+    question:
+      en: "How many branded food products have ingredient declarations mentioning sesame?"
+    gold: |
+      SELECT (COUNT(DISTINCT ?product) AS ?count)
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:ingredientDeclaration ?ingredients .
+
+        FILTER(
+          CONTAINS(
+            LCASE(STR(?ingredients)),
+            "sesame"
+          )
+        )
+      }

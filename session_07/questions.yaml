@@ -1,0 +1,144 @@
+
+# Session 07 — Food Knowledge Representation evaluation
+# 12 answerable questions and 3 questions that require refusal.
+#
+# Gold queries use the Food RDF ontology.
+# Ingredient mentions are text matches, not confirmed presence.
+
+dataset:
+  id: https://example.org/food-kr/
+  prefix: "PREFIX food: <https://example.org/food-kr/schema#>"
+
+questions:
+  - id: 1
+    question: {en: "How many branded food products are represented in the graph?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?product) AS ?n)
+      WHERE { ?product a food:BrandedFood . }
+
+  - id: 2
+    question: {en: "How many products are classified as Food but not as BrandedFood?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?product) AS ?n)
+      WHERE {
+        ?product a food:Food .
+        FILTER NOT EXISTS { ?product a food:BrandedFood . }
+      }
+
+  - id: 3
+    question: {en: "How many distinct food categories are represented among branded products?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?category) AS ?n)
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:foodCategory ?category .
+      }
+
+  - id: 4
+    question: {en: "How many branded products have ingredient declarations mentioning peanut?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?product) AS ?n)
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:ingredientDeclaration ?ingredients .
+        FILTER(CONTAINS(LCASE(STR(?ingredients)), "peanut"))
+      }
+
+  - id: 5
+    question: {en: "Which food categories contain branded products with ingredient declarations mentioning milk?"}
+    gold: |
+      SELECT DISTINCT ?category
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:foodCategory ?category ;
+                 food:ingredientDeclaration ?ingredients .
+        FILTER(CONTAINS(LCASE(STR(?ingredients)), "milk"))
+      }
+
+  - id: 6
+    question: {en: "How many branded products have no ingredient declaration or a blank declaration?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?product) AS ?n)
+      WHERE {
+        ?product a food:BrandedFood .
+        OPTIONAL {
+          ?product food:ingredientDeclaration ?ingredients .
+        }
+        FILTER(
+          !BOUND(?ingredients) ||
+          STRLEN(STR(?ingredients)) = 0 ||
+          STRLEN(REPLACE(STR(?ingredients), "\\s", "")) = 0
+        )
+      }
+
+  - id: 7
+    question: {en: "How many distinct brand owners are represented among branded products?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?owner) AS ?n)
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:brandOwner ?owner .
+      }
+
+  - id: 8
+    question: {en: "Which brand owners have products whose ingredient declarations mention soy?"}
+    gold: |
+      SELECT DISTINCT ?owner
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:brandOwner ?owner ;
+                 food:ingredientDeclaration ?ingredients .
+        FILTER(CONTAINS(LCASE(STR(?ingredients)), "soy"))
+      }
+
+  - id: 9
+    question: {en: "Which five food categories have the largest number of branded products?"}
+    gold: |
+      SELECT ?category (COUNT(DISTINCT ?product) AS ?n)
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:foodCategory ?category .
+      }
+      GROUP BY ?category
+      ORDER BY DESC(?n) ?category
+      LIMIT 5
+
+  - id: 10
+    question: {en: "How many distinct nutrients are represented in the graph?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?nutrient) AS ?n)
+      WHERE {
+        ?nutrient a food:Nutrient .
+      }
+
+  - id: 11
+    question: {en: "Which products have a nutrient measurement linked to a nutrient named Sodium, Na?"}
+    gold: |
+      SELECT DISTINCT ?product
+      WHERE {
+        ?product a food:BrandedFood ;
+                 food:hasNutrientMeasurement ?measurement .
+        ?measurement food:measuresNutrient ?nutrient .
+        ?nutrient food:nutrientName ?name .
+        FILTER(LCASE(STR(?name)) = "sodium, na")
+      }
+
+  - id: 12
+    question: {en: "How many nutrient measurements are represented in the graph?"}
+    gold: |
+      SELECT (COUNT(DISTINCT ?measurement) AS ?n)
+      WHERE {
+        ?measurement a food:NutrientMeasurement .
+      }
+
+  - id: 13
+    question: {en: "Which branded food products were recalled yesterday?"}
+    refuse: "the graph has no food recall events or recall dates"
+
+  - id: 14
+    question: {en: "What is the current supermarket price of each branded product in Lebanon?"}
+    refuse: "the graph has no supermarket prices or current retail data"
+
+  - id: 15
+    question: {en: "Which branded products have caused confirmed food poisoning incidents?"}
+    refuse: "the graph has no food poisoning incident records"
