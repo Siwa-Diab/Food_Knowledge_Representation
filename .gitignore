@@ -8,6 +8,8 @@
 .venv312/
 .venv-s05/
 .venv-s06/
+.venv-s07/
+.env
 venv/
 env/
 
